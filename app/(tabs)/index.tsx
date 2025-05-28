@@ -6,7 +6,7 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Link } from 'expo-router';
 
-export default function HomeScreen() {
+export default function MenusScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -24,7 +24,7 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView style={styles.menuButtonContainer}>
         <ThemedText type="title">
-          <Link style={styles.menuButton} href="/explore">Start game</Link>
+          <Link style={styles.menuButton} href="/game">Start game</Link>
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
